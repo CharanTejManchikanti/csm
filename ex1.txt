@@ -1,0 +1,174 @@
+Microsoft Windows [Version 10.0.22624.1616]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   contentfile.txt
+        modified:   ex.txt
+
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git commit -m "addedfile"
+[master 9a0cc1b] addedfile
+ 2 files changed, 8 insertions(+)
+ create mode 100644 contentfile.txt
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git remote add origin https://github.com/CharanTejManchikanti/csm.git
+error: remote origin already exists.
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git push -u origin hii
+error: src refspec hii does not match any
+error: failed to push some refs to 'https://github.com/CharanTejManchikanti/csm.git'
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git push -u origin hi
+Everything up-to-date
+branch 'hi' set up to track 'origin/hi'.
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git branch
+  h2
+  hi
+* master
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git branch checkout hi
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git commit
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git remote add origin https://github.com/CharanTejManchikanti/csm.git
+error: remote origin already exists.
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git push -u origin hi
+Everything up-to-date
+branch 'hi' set up to track 'origin/hi'.
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git branch
+  checkout
+  h2
+  hi
+* master
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git commit
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git commit -m "heeeeee"
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git branch
+  checkout
+  h2
+  hi
+* master
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git remote add origin main https://github.com/CharanTejManchikanti/csm.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git remote add origin hi https://github.com/CharanTejManchikanti/csm.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git branch main
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git branch
+  checkout
+  h2
+  hi
+  main
+* master
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git checkout main
+Switched to branch 'main'
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git branch
+  checkout
+  h2
+  hi
+* main
+  master
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git commit -m "my files"
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git remote add origin main https://github.com/CharanTejManchikanti/csm.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git push -u "new files"
+fatal: 'new files' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git remote add origin https://github.com/CharanTejManchikanti/csm.git
+error: remote origin already exists.
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git push -u  origin
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 381 bytes | 381.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'main' on GitHub by visiting:
+remote:      https://github.com/CharanTejManchikanti/csm/pull/new/main
+remote:
+To https://github.com/CharanTejManchikanti/csm.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\tejch\OneDrive\Desktop\hiiii>
